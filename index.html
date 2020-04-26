@@ -1,13 +1,16 @@
 
-
 <!DOCTYPE html>
 <html>
 	<head>
 		<title>ATOSfreelance.CLUB</title>
-        <script>
+        <script type="text/javascript" language="javascript">
 function run2 () {
-//  alert ("testing");
-    document.location.href='virus.html';
+var inputVal = document.getElementById("pwd").value;
+      if (inputVal=="virus")  {
+            // Displaying the value
+           // alert(inputVal);
+    location.href="virus.html";
+      } 
 }
             
 </script>
@@ -22,16 +25,16 @@ function run2 () {
 -->
 
 
-<form id="commentForm" name="comment">
     <img src="furlanme.jpg"/>
     <h3>
     Marie Helene Furlan - Pontarlier, France</br>
     &nbsp;</br>
                                  <label for="name">Mot de passe / Password&nbsp;&nbsp;</label>
                                 <input type="text" class="text" id="pwd" value="" />&nbsp;&nbsp;
-                                 <input type="submit" name="submit" class="submit" id="submit_btn" value="OK" onsubmit="run2();" onclick="run2();">
+                                 <input type="button" name="submit" class="button" id="submit_btn" value="OK" onclick="run2();">
                              </h3>
-      </form>
+
   </center>
   </body>
 </html>
+
